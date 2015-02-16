@@ -110,6 +110,7 @@ a:hover{
 	line-height: 40px;
 	border-left:8px solid #2CB2BC;
 	padding-left: 20px;
+	font-weight:bold;
 }
 .title::before{
 	content:'';
@@ -266,7 +267,6 @@ a:hover{
 }
 /*****************************/
 .social{
-	border: 1px solid #e3e2e2;
 	padding: 10px;
 	font-family: "FFontAwesome";
 }
@@ -282,7 +282,7 @@ a:hover{
 	width:40px;
 	height:40px;
 	background: #f2f2f4;
-	margin:0 auto;
+	margin:0 auto 20px;
 	text-align:center;
 	line-height:40px;
 }
@@ -300,7 +300,9 @@ a:hover{
 .fb::before{
 	content:"\f09a";
 }
-
+.gl:hover, .in:hover, .tw:hover, .fb:hover{
+	color:#fff;
+}
 .gl:hover{
 	background: #E84B44;
 }
@@ -313,13 +315,58 @@ a:hover{
 .fb:hover{
 	background: #4B6DAA;
 }
+
+.count-like{
+	position: relative;
+	width:100%;
+	background: #f2f2f4;
+	height: 40px;
+}
+.count-like::before{
+	position: absolute;
+	top:-20px;
+	left:50%;
+	margin-left:-10px;
+	content:'';
+	border-top: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #f2f2f4;
+	border-left: 10px solid transparent;
+
+}
 /*****************************/
 .aside-wrap>div{
 	background: #9AEDFC;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	border: 1px solid #e3e2e2;
+}
+/*****************************/
+
+.mini-post{
+	width:100%;
+	height: 50px;
+	background: #fff;
+}
+
+.mini-post:nth-child(2n){
+	background:#F2F2F4;
 }
 .last-update{
-	margin-top: 15px;
+	/*margin-top: 15px;*/
+}
+/*****************************/
+.video-post{
+
+}
+
+.banner{
+	width:100%;
+	height:250px;
+	background: #d5d5d5;
+	color:#fff;
+	text-align: center;
+	line-height:250px;
+	font-size:3em;
 }
 /*footer*/
 /***************************************************/
