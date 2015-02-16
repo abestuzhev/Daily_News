@@ -19,7 +19,7 @@ hr{
 	margin-bottom: 30px;
 }
 h5{
-	margin: 0 0 20px 0;
+	margin: 0px 0px 20px 0px;
 	font-size:1em;
 	line-height:1em;
 }
@@ -190,12 +190,12 @@ a:hover{
 	margin-bottom:30px;
 }
 .post{
-	background: #7EE7D5;
+	/*background: #7EE7D5;*/
 	margin: 15px 0;
 	position:relative;
 }
 .post p{
-	margin-bottom:35px;
+	margin-bottom:40px;
 	font-size:.9em;
 }
 .horizont{
@@ -205,6 +205,7 @@ a:hover{
 	width:50%;
 	float:left;
 	position: relative;
+	height:252px;
 }
 .vertical{
 	float:left;
@@ -213,14 +214,17 @@ a:hover{
 	margin-left:-8px;
 	margin-bottom:20px;
 }
+.vertical img{
+	margin-bottom: 20px;
+}
 .vertical img,  .horizont img{
 	max-width:100%;
 	height:auto;
 }
 .vertical-text{
 	min-height: 180px;
+	padding-left: 5px;
 }
-
 /***************************************************/
 .aside{
 	width:33.3%;
@@ -231,6 +235,12 @@ a:hover{
 	padding: 10px 0 0 10px;
 	border:1px solid #ccc;
 	background: #CBCCC4;
+}
+
+.aside-wrap>div{
+	height:200px;
+	background: #9AEDFC;
+	margin-bottom: 20px;
 }
 .last-update{
 	margin-top: 15px;
