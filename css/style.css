@@ -35,7 +35,7 @@ h5{
 	line-height:1em;
 }
 
-a{
+a, input{
 	text-decoration: none;
 	-webkit-transition: all .4s;
 	-o-transition: all .4s;
@@ -68,9 +68,15 @@ time{
 	text-decoration: none;
 	text-align:center;
 }
-.read-more:hover{
+.read-more:hover, input[type="submit"]:hover{
 	background: #68C7CE;
 	color:#fff;
+}
+.float-left{
+	float:left;
+}
+.float-right{
+	float:right;
 }
 /*like*/
 /*************************/
@@ -94,7 +100,7 @@ time{
 
 /*clearfix
 /***************************************************/
-.header::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
+.header::after, .header-nav::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
 	content:'';
 	display:table;
 	clear: both;
@@ -145,6 +151,16 @@ time{
 .registration{
 	background: #343333;
 	height:40px;
+	font-size:.9em;
+}
+.header-nav li{
+	float:left;
+}
+
+.header-nav a{
+	display: block;
+	padding: 10px;
+	border:1px solid #fff;
 }
 .logoBan{
 	background: #fff;
@@ -286,8 +302,8 @@ time{
 }
 .social-cont{
 	width:25%;
-	background: #F9B0B0;
-	border:1px solid #fff;
+	/*background: #F9B0B0;*/
+	/*border:1px solid #fff;*/
 	float:left;
 	padding: 0 10px;
 }
@@ -334,7 +350,7 @@ time{
 	position: relative;
 	width:100%;
 	background: #f2f2f4;
-	height: 40px;
+	padding: 5px 5px 1px;
 }
 .count-like::before{
 	position: absolute;
@@ -347,6 +363,12 @@ time{
 	border-bottom: 10px solid #f2f2f4;
 	border-left: 10px solid transparent;
 
+}
+.count-like p{
+	margin: 0 0 5px 0;
+	font-family: Tahoma, sans-serif;
+	text-align:center;
+	color:#5f5f5f;
 }
 /*****************************/
 .social, .popular-post, .video-post, .calendar, .order-post, .entertainment, .banner {
@@ -421,29 +443,34 @@ video{
 .newslater{
 	margin-top:10px;
 	padding: 0;
-	/*padding: 1px 10px 5px 10px;*/
+	border-right:0;
 }
 
 input[type="email"]{
-	width:60%;
+	width:100%;
+	font-weight:normal;
+	padding-left:5px;
 }
 input[type="submit"]{
 	width:32%;
 	background: #2CB2BC;
 	color:#fff;
 	border:none;
-	line-height:40px;
+	line-height:38px;
+	outline: none;
+}
+input[type="submit"]:hover{
+
 }
 .email-wrap{
-	width:70%;
-	/*padding: 10px;*/
-	background: #A2F9AA;
+	width:68%;
+	padding: 0 10px;
+	/*background: #A2F9AA;*/
 	float:left;
 }
-.submit-wrap{
-	width: 30%;
-	background: #DAB852;
-}
+
+
+
 /*footer*/
 /***************************************************/
 .footer{
