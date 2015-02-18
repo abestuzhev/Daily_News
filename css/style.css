@@ -35,7 +35,7 @@ h5{
 	line-height:1em;
 }
 
-a, input{
+a, input, button{
 	text-decoration: none;
 	-webkit-transition: all .4s;
 	-o-transition: all .4s;
@@ -68,7 +68,7 @@ time{
 	text-decoration: none;
 	text-align:center;
 }
-.read-more:hover, input[type="submit"]:hover{
+.read-more:hover, input[type="submit"]:hover, button{
 	background: #68C7CE;
 	color:#fff;
 }
@@ -100,7 +100,7 @@ time{
 
 /*clearfix
 /***************************************************/
-.header::after, .header-nav::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
+.header::after, .header-nav::after, .registration::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
 	content:'';
 	display:table;
 	clear: both;
@@ -111,7 +111,7 @@ time{
 .layout-center{
 	max-width:1170px;
 	margin:0 auto;
-	border:2px solid red;
+	/*border:2px solid red;*/
 }
 
 .title, .newslater{
@@ -159,8 +159,43 @@ time{
 
 .header-nav a{
 	display: block;
-	padding: 10px;
-	border:1px solid #fff;
+	line-height:40px;
+	padding: 0 10px;
+	color:#a5a3a5;
+	/*border:1px solid #fff;*/
+}
+.header-nav a:hover{
+	border-bottom:2px solid #2CB2BC;
+}
+.header-form{
+	font-family: FFontAwesome;
+	width:255px;
+	margin: 0;
+	padding: 4px 0;
+}
+.header-form input{
+	width:100%;
+	line-height:29px;
+	border:none;
+	outline:0;
+	padding-left: 10px;
+	font-family:Tahoma,sans-serif;
+	background: #dadada;
+}
+.header-form button{
+	line-height:29px;
+	background: #2CB2BC;
+	border:none;
+	padding-right: 11px;
+	padding-left: 11px;
+}
+.header-form-wrap{
+	float: left;
+	width:86%;
+	border-left:6px solid #2CB2BC;
+}
+.header-form button::before{
+	content:'\f002';
 }
 .logoBan{
 	background: #fff;
@@ -459,9 +494,7 @@ input[type="submit"]{
 	line-height:38px;
 	outline: none;
 }
-input[type="submit"]:hover{
 
-}
 .email-wrap{
 	width:68%;
 	padding: 0 10px;
