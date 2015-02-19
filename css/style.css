@@ -68,7 +68,7 @@ time{
 	text-decoration: none;
 	text-align:center;
 }
-.read-more:hover, input[type="submit"]:hover, button{
+.read-more:hover, input[type="submit"]:hover, .header-form button:hover, .nav a:hover{
 	background: #68C7CE;
 	color:#fff;
 }
@@ -100,7 +100,7 @@ time{
 
 /*clearfix
 /***************************************************/
-.header::after, .header-nav::after, .registration::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
+.header::after, .header-nav::after, .registration::after, .nav::after, .lang::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
 	content:'';
 	display:table;
 	clear: both;
@@ -171,11 +171,11 @@ time{
 	font-family: FFontAwesome;
 	width:255px;
 	margin: 0;
-	padding: 4px 0;
+	padding: 5px 0;
 }
 .header-form input{
 	width:100%;
-	line-height:29px;
+	line-height:27px;
 	border:none;
 	outline:0;
 	padding-left: 10px;
@@ -183,9 +183,10 @@ time{
 	background: #dadada;
 }
 .header-form button{
-	line-height:29px;
+	line-height:27px;
 	background: #2CB2BC;
 	border:none;
+	color:#fff;
 	padding-right: 11px;
 	padding-left: 11px;
 }
@@ -201,14 +202,55 @@ time{
 	background: #fff;
 	height:130px;
 }
+/*nav*/
+/*************************/
 .nav{
 	background: #2CB2BC;
 	height:40px;
 }
+.nav>li{
+	float: left;
+	line-height:40px;
+}
+.nav a{
+	display: block;
+	padding: 0px 20px;
+	color:#fff;
+}
+/*lang*/
+/*************************/
 .lang{
 	background: #F2F2F4;
-	height:60px;
+	height:35px;
+	font-size: .9em;
+	color:#5f5f5f;
 }
+.lang a, .lang span{
+	line-height: 35px;
+}
+.lang-country li{
+	float: left;
+}
+.lang-country a{
+	display: block;
+	padding: 0px 20px
+}
+
+.lang-country a:hover{
+	background: #ECEDE9;
+}
+.language{
+	float: right;
+}
+.language a{
+	padding-left: 15px;
+}
+
+.language img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
 /*content*/
 /***************************************************/
 .content{
