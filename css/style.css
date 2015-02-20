@@ -29,13 +29,25 @@ ul{
 hr{
 	margin-bottom: 30px;
 }
+h1{
+	font-size:1.4em;
+	font-weight: normal;
+	margin: 0;
+	color:#818285;
+}
+h3{
+	font-size:.8em;
+	font-weight: normal;
+	margin: 0;
+	color:#515252;
+}
 h5{
 	margin: 0px 0px 20px 0px;
 	font-size:1em;
 	line-height:1em;
 }
 
-a, input, button{
+a, input, button, .tags a{
 	text-decoration: none;
 	-webkit-transition: all .4s;
 	-o-transition: all .4s;
@@ -100,7 +112,7 @@ time{
 
 /*clearfix
 /***************************************************/
-.header::after, .header-nav::after, .registration::after, .nav::after, .lang::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
+.header::after, .logo::after .header-nav::after, .registration::after, .nav::after, .lang::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
 	content:'';
 	display:table;
 	clear: both;
@@ -550,18 +562,82 @@ input[type="submit"]{
 /***************************************************/
 .footer{
 	background:#282c2d url(../img/footer-sidebar-bg.png)repeat;
+	padding: 30px 0;
+	color:#907D7D;
 }
 .col-1-4{
 	width:25%;
-	height:270px;
-	background: #B7C444;
+	/*height:270px;*/
+	/*background: #B7C444;*/
 	float:left;
-	border:1px solid #778028;
+	/*border:1px solid #778028;*/
 }
 .col-1-4-wrap{
 	padding: 10px;
 }
-.copyright{
-	height:40px;
+/*****************************/
+.footer h5{
+	font-weight:normal;
+	margin: 0;
+}
+.footer hr{
+	margin: 5px 0 20px 0;
+	padding: 0;
+}
+/*****************************/
+.footer-logo{
+	width: 60%;
+}
+h1 span{
+	font-weight:bold;
+	color:#515252;
+}
+.logo img{
+	float: left;
+	margin-right: 10px;
+}
+/*****************************/
+.footer-post{
+	margin-top:-10px;
+}
+.footer-post img{
+	background: #B9B9B9;
+}
+.footer-post .mini-post{
+	background: transparent;
+	padding-left: 0;
+}
+/*****************************/
+.tags-pos a{
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: .9em;
+	margin: 0 0 10px 5px;
 	background: #2CB2BC;
+	color:#fff;
+}
+
+.tags-pos{
+	position: relative;
+	left:-5px;
+
+}
+.tags a:hover{
+	background: #5f5f5f;
+}
+/*****************************/
+.copyright{
+	/*height:40px;*/
+	background: #2CB2BC;
+	padding: 0 20px;
+	text-align: center;
+}
+.co-text{
+	color:#fff;
+	font-size:.9em;
+	line-height:40px;
+}
+
+.co-text:hover{
+	color:#EFEFEF;
 }
