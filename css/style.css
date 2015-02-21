@@ -112,7 +112,7 @@ time{
 
 /*clearfix
 /***************************************************/
-.header::after, .logo::after .header-nav::after, .registration::after, .nav::after, .lang::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after{
+.header::after, .logo::after, .logoBan::after, .header-nav::after, .registration::after, .nav::after, .lang::after, .main::after, .gallery::after, .post::after, .social::after, .mini-post::after,.newslater::after, .footer::after, .footer-social::after{
 	content:'';
 	display:table;
 	clear: both;
@@ -212,7 +212,30 @@ time{
 }
 .logoBan{
 	background: #fff;
-	height:130px;
+	padding: 20px 0;
+}
+.header-logo{
+	padding: 14px 0;
+	float:left;
+	width:30%;
+}
+.header-logo img{
+	margin-right:20px;
+}
+.big-h1{
+	font-size:2.2em;
+}
+.big-h3{
+	font-size:1em;
+}
+.ban{
+	background: #d5d5d5;
+	line-height:90px;
+	width:728px;
+	text-align:center;
+	font-size:2.5em;
+	color:#fff;
+	float:right;
 }
 /*nav*/
 /*************************/
@@ -272,7 +295,7 @@ time{
 	float: left;
 }
 .content-wrap{
-	padding:10px 10px 0 0;
+	padding:15px 10px 0 0;
 	background: #CBCCC4;
 }
 .slider{
@@ -380,7 +403,7 @@ time{
 	float: right;
 }
 .aside-wrap{
-	padding: 10px 0 0 10px;
+	padding: 15px 0 0 10px;
 	border:1px solid #ccc;
 	background: #CBCCC4;
 }
@@ -594,6 +617,8 @@ h1 span{
 }
 .logo img{
 	float: left;
+}
+.footer-logo img{
 	margin-right: 10px;
 }
 /*****************************/
@@ -629,6 +654,7 @@ h1 span{
 .copyright{
 	/*height:40px;*/
 	background: #2CB2BC;
+	position: relative;
 	padding: 0 20px;
 	text-align: center;
 }
@@ -640,4 +666,18 @@ h1 span{
 
 .co-text:hover{
 	color:#EFEFEF;
+}
+.footer-social{
+	position: absolute;
+	right:20px;
+	top:0;
+	font-family: "FFontAwesome";
+	
+}
+.footer-social .social-icon{
+	margin: 0;
+	color:#fff;
+}
+.bg{
+	background: transparent;
 }
