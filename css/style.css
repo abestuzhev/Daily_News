@@ -331,13 +331,13 @@ time{
 /***************************************************/
 .content{
 	width: 66.6%;
-	background: #86FD71;
-	border-right:1px solid #151515;
+	/*background: #86FD71;*/
+	border-right:1px solid #BBBBBB;
 	float: left;
 }
 .content-wrap{
 	padding:15px 10px 0 0;
-	background: #CBCCC4;
+	/*background: #CBCCC4;*/
 }
 .slider{
 	width: 100%;
@@ -388,8 +388,9 @@ time{
 	padding-left:14px;
 }
 
+
 .gallery img{
-	width:100%;
+	max-width:100%;
 	height:auto;
 }
 
@@ -440,13 +441,13 @@ time{
 /***************************************************/
 .aside{
 	width:33.3%;
-	background: #209F1A;
+	/*background: #209F1A;*/
 	float: right;
 }
 .aside-wrap{
 	padding: 15px 0 0 10px;
-	border:1px solid #ccc;
-	background: #CBCCC4;
+	/*border:1px solid #ccc;*/
+	/*background: #CBCCC4;*/
 }
 /*****************************/
 .social{
@@ -525,7 +526,7 @@ time{
 }
 /*****************************/
 .social, .popular-post, .video-post, .calendar, .order-post, .entertainment, .banner {
-	background: #9AEDFC;
+	/*background: #9AEDFC;*/
 	margin-bottom: 40px;
 	border: 1px solid #e3e2e2;
 }
